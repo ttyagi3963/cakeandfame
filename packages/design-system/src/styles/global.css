@@ -1,0 +1,24 @@
+/*
+ * GLOBAL STYLES
+ *
+ * Base styles applied to the entire app.
+ * Uses semantic tokens only — never primitives.
+ * This file is imported AFTER reset.css and tokens.
+ */
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg-page);
+  color: var(--text-primary);
+  line-height: 1.5;
+  transition:
+    background var(--ease-normal),
+    color var(--ease-normal);
+}
+
+/*
+ * The transition on body means when the user toggles
+ * dark/light mode, the background and text color
+ * smoothly fade instead of snapping. Small detail,
+ * but it makes theme switching feel polished.
+ */

@@ -1,0 +1,12 @@
+/*
+ * STYLES — entry point
+ *
+ * Import order:
+ * 1. Tokens (primitives + semantic)
+ * 2. Reset (strip browser defaults)
+ * 3. Globals (base body styles)
+ */
+
+@import '../tokens/index.css';
+@import './reset.css';
+@import './globals.css';
