@@ -1,0 +1,20 @@
+*********************************
+A production-grade celebrity birthdays platform built as a Turborepo 
+monorepo with Next.js, TypeScript, Node.js, and PostgreSQL. 
+Features a custom design system with HeroUI-inspired dark/light theming, 
+headless React Aria primitives, CSS Modules, and cva-based variant 
+architecture. Built to demonstrate scalable 
+	- component design, 
+	- token-driven theming, 
+	- clean architecture patterns,
+	- and shared package consumption across applications.
+
+
+	
+	
+**********************************************
+
+A. scaffold the project 
+		
+		step 1: Turborepo setup 
+				> npx create-turbo@latest cake-and-fame
