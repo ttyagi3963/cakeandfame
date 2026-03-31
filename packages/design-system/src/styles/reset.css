@@ -1,0 +1,80 @@
+/*
+ * MODERN CSS RESET
+ *
+ * Strips browser defaults that cause inconsistency.
+ * Keeps useful defaults that would be tedious to rebuild.
+ *
+ * Based on Josh Comeau's modern CSS reset.
+ */
+
+/* Use border-box everywhere. Without this, padding
+   adds to element width which breaks layouts. */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins. Every element starts flush.
+   Spacing is added intentionally via tokens. */
+* {
+  margin: 0;
+}
+
+/* Full height app shell. Without this, body height
+   collapses and you can't vertically center anything. */
+html, body {
+  height: 100%;
+}
+
+/* Smoother font rendering on macOS/iOS.
+   Without this, fonts look heavier than designed. */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Images and media should not overflow their containers.
+   Without this, a large image breaks your layout. */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Form elements don't inherit font by default.
+   Without this, inputs use the browser's serif font. */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Long words should break instead of overflowing.
+   Without this, a long URL or name breaks your card layout. */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Remove list styles. We style lists intentionally. */
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* Links don't need underlines by default in an app UI.
+   We add them intentionally where needed. */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove button default styles so we can style from scratch. */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Stacking context for the app root.
+   Prevents z-index wars with modals and popovers. */
+#__next {
+  isolation: isolate;
+  min-height: 100%;
+}

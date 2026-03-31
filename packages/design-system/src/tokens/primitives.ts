@@ -144,7 +144,6 @@ export const fontSize = {
 
 export const fontFamily = {
   sans: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
-  mono: "'Fira Code', 'JetBrains Mono', 'Consolas', monospace",
 } as const;
 
 export const transition = {

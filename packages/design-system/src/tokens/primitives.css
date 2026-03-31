@@ -10,8 +10,10 @@
  */
 
 :root {
+  /* ── Absolutes ── */
   --black: #000000;
   --white: #ffffff;
+
   /* ── Zinc (Neutral) ── */
   --zinc-50: #fafafa;
   --zinc-100: #f4f4f5;
@@ -123,9 +125,7 @@
   --radius-full: 9999px;
 
   /* ── Typography ── */
-  --font-sans:
-    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-mono: "Fira Code", "JetBrains Mono", "Consolas", monospace;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;

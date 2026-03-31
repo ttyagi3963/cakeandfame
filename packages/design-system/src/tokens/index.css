@@ -9,5 +9,5 @@
  * @import '@repo/design-system/tokens'
  */
 
-@import "./primitives.css";
-@import "./semantics.css";
+@import './primitives.css';
+@import './semantic.css';

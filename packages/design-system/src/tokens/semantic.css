@@ -39,12 +39,12 @@
   --interactive: var(--blue-500);
   --interactive-hover: var(--blue-400);
   --interactive-active: var(--blue-600);
-  --interactive-fg: #ffffff;
+  --interactive-fg: var(--white);
 
   /* Secondary actions */
   --secondary: var(--purple-500);
   --secondary-hover: var(--purple-400);
-  --secondary-fg: #ffffff;
+  --secondary-fg: var(--white);
 
   /* Status: Success */
   --success: var(--green-500);
@@ -85,8 +85,8 @@
   color-scheme: light;
 
   /* Surfaces */
-  --bg-page: #ffffff;
-  --bg-primary: #ffffff;
+  --bg-page: var(--white);
+  --bg-primary: var(--white);
   --bg-secondary: var(--zinc-100);
   --bg-tertiary: var(--zinc-200);
   --bg-inverse: var(--zinc-900);
@@ -95,7 +95,7 @@
   --text-primary: var(--zinc-900);
   --text-secondary: var(--zinc-500);
   --text-tertiary: var(--zinc-400);
-  --text-inverse: #ffffff;
+  --text-inverse: var(--white);
   --text-link: var(--blue-500);
 
   /* Borders */
@@ -108,12 +108,12 @@
   --interactive: var(--blue-500);
   --interactive-hover: var(--blue-600);
   --interactive-active: var(--blue-700);
-  --interactive-fg: #ffffff;
+  --interactive-fg: var(--white);
 
   /* Secondary */
   --secondary: var(--purple-500);
   --secondary-hover: var(--purple-600);
-  --secondary-fg: #ffffff;
+  --secondary-fg: var(--white);
 
   /* Status: Success */
   --success: var(--green-600);
