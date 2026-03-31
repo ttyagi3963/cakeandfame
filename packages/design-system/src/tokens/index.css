@@ -1,0 +1,13 @@
+/*
+ * DESIGN TOKENS — entry point
+ *
+ * Import order matters:
+ * 1. Primitives first (raw values in :root)
+ * 2. Semantic second (references primitives via var())
+ *
+ * Apps import this single file:
+ * @import '@repo/design-system/tokens'
+ */
+
+@import "./primitives.css";
+@import "./semantics.css";

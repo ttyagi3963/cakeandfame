@@ -1,0 +1,150 @@
+/*
+ * LAYER 2: SEMANTIC TOKENS
+ *
+ * Intent-based aliases that components reference.
+ * Components ONLY use these — never primitives directly.
+ *
+ * Dark mode is the default (HeroUI aesthetic).
+ * Light mode overrides the same variable names.
+ *
+ * Naming: --{category}-{role}
+ * Categories: bg, text, border, interactive, status
+ */
+
+/* ── Dark Theme (default) ── */
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* Surfaces */
+  --bg-page: var(--black);
+  --bg-primary: var(--zinc-900);
+  --bg-secondary: var(--zinc-800);
+  --bg-tertiary: var(--zinc-700);
+  --bg-inverse: var(--zinc-50);
+
+  /* Text */
+  --text-primary: #ecedee;
+  --text-secondary: var(--zinc-400);
+  --text-tertiary: var(--zinc-500);
+  --text-inverse: var(--zinc-900);
+  --text-link: var(--blue-400);
+
+  /* Borders */
+  --border-default: var(--zinc-800);
+  --border-subtle: var(--zinc-700);
+  --border-strong: var(--zinc-600);
+  --border-focus: var(--blue-500);
+
+  /* Interactive (Primary actions) */
+  --interactive: var(--blue-500);
+  --interactive-hover: var(--blue-400);
+  --interactive-active: var(--blue-600);
+  --interactive-fg: #ffffff;
+
+  /* Secondary actions */
+  --secondary: var(--purple-500);
+  --secondary-hover: var(--purple-400);
+  --secondary-fg: #ffffff;
+
+  /* Status: Success */
+  --success: var(--green-500);
+  --success-bg: var(--green-900);
+  --success-fg: var(--green-400);
+
+  /* Status: Danger */
+  --danger: var(--pink-500);
+  --danger-bg: var(--pink-900);
+  --danger-fg: var(--pink-400);
+
+  /* Status: Warning */
+  --warning: var(--yellow-500);
+  --warning-bg: var(--yellow-900);
+  --warning-fg: var(--yellow-400);
+
+  /* Status: Info */
+  --info: var(--cyan-600);
+  --info-bg: var(--cyan-900);
+  --info-fg: var(--cyan-400);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 20px rgba(0, 111, 238, 0.3);
+  --shadow-focus: 0 0 0 3px rgba(0, 111, 238, 0.35);
+
+  /* Gradients */
+  --gradient-hero: radial-gradient(ellipse at 50% 0%, rgba(51, 142, 247, 0.12) 0%, transparent 60%);
+  --gradient-accent: linear-gradient(135deg, #f31260 0%, #7828c8 100%);
+  --gradient-cta: linear-gradient(135deg, #006fee 0%, #338ef7 100%);
+  --gradient-shine: linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0%, transparent 50%);
+}
+
+/* ── Light Theme ── */
+[data-theme="light"] {
+  color-scheme: light;
+
+  /* Surfaces */
+  --bg-page: #ffffff;
+  --bg-primary: #ffffff;
+  --bg-secondary: var(--zinc-100);
+  --bg-tertiary: var(--zinc-200);
+  --bg-inverse: var(--zinc-900);
+
+  /* Text */
+  --text-primary: var(--zinc-900);
+  --text-secondary: var(--zinc-500);
+  --text-tertiary: var(--zinc-400);
+  --text-inverse: #ffffff;
+  --text-link: var(--blue-500);
+
+  /* Borders */
+  --border-default: var(--zinc-200);
+  --border-subtle: var(--zinc-100);
+  --border-strong: var(--zinc-300);
+  --border-focus: var(--blue-500);
+
+  /* Interactive */
+  --interactive: var(--blue-500);
+  --interactive-hover: var(--blue-600);
+  --interactive-active: var(--blue-700);
+  --interactive-fg: #ffffff;
+
+  /* Secondary */
+  --secondary: var(--purple-500);
+  --secondary-hover: var(--purple-600);
+  --secondary-fg: #ffffff;
+
+  /* Status: Success */
+  --success: var(--green-600);
+  --success-bg: var(--green-50);
+  --success-fg: var(--green-700);
+
+  /* Status: Danger */
+  --danger: var(--pink-500);
+  --danger-bg: var(--pink-50);
+  --danger-fg: var(--pink-700);
+
+  /* Status: Warning */
+  --warning: var(--yellow-500);
+  --warning-bg: var(--yellow-50);
+  --warning-fg: var(--yellow-700);
+
+  /* Status: Info */
+  --info: var(--cyan-600);
+  --info-bg: var(--cyan-50);
+  --info-fg: var(--cyan-800);
+
+  /* Shadows (lighter for light mode) */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-glow: 0 0 20px rgba(0, 111, 238, 0.15);
+  --shadow-focus: 0 0 0 3px rgba(0, 111, 238, 0.25);
+
+  /* Gradients */
+  --gradient-hero: radial-gradient(ellipse at 50% 0%, rgba(0, 111, 238, 0.06) 0%, transparent 60%);
+  --gradient-accent: linear-gradient(135deg, #f31260 0%, #7828c8 100%);
+  --gradient-cta: linear-gradient(135deg, #006fee 0%, #338ef7 100%);
+  --gradient-shine: linear-gradient(135deg, rgba(0, 0, 0, 0.02) 0%, transparent 50%);
+}

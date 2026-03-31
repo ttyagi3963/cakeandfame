@@ -1,0 +1,145 @@
+/*
+ * LAYER 1: PRIMITIVE TOKENS
+ *
+ * Raw color scales from HeroUI's palette.
+ * These are NEVER referenced by components directly.
+ * They only exist to feed the semantic layer.
+ *
+ * Naming: --{color}-{stop}
+ * Stops: 50 (lightest) to 900/950 (darkest)
+ */
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  /* ── Zinc (Neutral) ── */
+  --zinc-50: #fafafa;
+  --zinc-100: #f4f4f5;
+  --zinc-200: #e4e4e7;
+  --zinc-300: #d4d4d8;
+  --zinc-400: #a1a1aa;
+  --zinc-500: #71717a;
+  --zinc-600: #52525b;
+  --zinc-700: #3f3f46;
+  --zinc-800: #27272a;
+  --zinc-900: #18181b;
+  --zinc-950: #0a0a0a;
+
+  /* ── Blue (Primary) ── */
+  --blue-50: #e6f1fe;
+  --blue-100: #cce3fd;
+  --blue-200: #99c7fb;
+  --blue-300: #66aaf9;
+  --blue-400: #338ef7;
+  --blue-500: #006fee;
+  --blue-600: #005bc4;
+  --blue-700: #004493;
+  --blue-800: #002e62;
+  --blue-900: #001731;
+
+  /* ── Purple (Secondary) ── */
+  --purple-50: #f2eafa;
+  --purple-100: #e4d4f4;
+  --purple-200: #c9a9e9;
+  --purple-300: #ae7ede;
+  --purple-400: #9353d3;
+  --purple-500: #7828c8;
+  --purple-600: #6020a0;
+  --purple-700: #481878;
+  --purple-800: #301050;
+  --purple-900: #180828;
+
+  /* ── Green (Success) ── */
+  --green-50: #e8faf0;
+  --green-100: #d1f4e0;
+  --green-200: #a2e9c1;
+  --green-300: #74dfa2;
+  --green-400: #45d483;
+  --green-500: #17c964;
+  --green-600: #12a150;
+  --green-700: #0e793c;
+  --green-800: #095028;
+  --green-900: #052814;
+
+  /* ── Pink (Danger) ── */
+  --pink-50: #fee7ef;
+  --pink-100: #fdd0df;
+  --pink-200: #faa0bf;
+  --pink-300: #f871a0;
+  --pink-400: #f54180;
+  --pink-500: #f31260;
+  --pink-600: #c20e4d;
+  --pink-700: #920b3a;
+  --pink-800: #610726;
+  --pink-900: #310413;
+
+  /* ── Yellow (Warning) ── */
+  --yellow-50: #fefce8;
+  --yellow-100: #fdedd3;
+  --yellow-200: #fbdba7;
+  --yellow-300: #f9c97c;
+  --yellow-400: #f7b750;
+  --yellow-500: #f5a524;
+  --yellow-600: #c4841d;
+  --yellow-700: #936316;
+  --yellow-800: #62420e;
+  --yellow-900: #312107;
+
+  /* ── Cyan (Info) ── */
+  --cyan-50: #f0fcff;
+  --cyan-100: #e6fafe;
+  --cyan-200: #d7f8fe;
+  --cyan-300: #c3f4fd;
+  --cyan-400: #a5eefd;
+  --cyan-500: #7ee7fc;
+  --cyan-600: #06b7db;
+  --cyan-700: #09aacd;
+  --cyan-800: #0e8aaa;
+  --cyan-900: #053b48;
+
+  /* ── Spacing (4px base grid) ── */
+  --space-0: 0;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-14: 56px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* ── Border Radius ── */
+  --radius-none: 0;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  /* ── Typography ── */
+  --font-sans:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "Fira Code", "JetBrains Mono", "Consolas", monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+
+  /* ── Transitions ── */
+  --ease-fast: 150ms ease;
+  --ease-normal: 250ms ease;
+  --ease-slow: 350ms ease-out;
+  --ease-spring: 500ms cubic-bezier(0.16, 1, 0.3, 1);
+}
